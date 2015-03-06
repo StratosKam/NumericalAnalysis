@@ -13,7 +13,7 @@ Root approximation methods
 
 Matrices
 
-  -PA=LU decomposition
+  -Gauss method using PA=LU decomposition
 
   -Cholesky decomposition
 
