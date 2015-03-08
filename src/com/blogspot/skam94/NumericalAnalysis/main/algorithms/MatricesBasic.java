@@ -207,4 +207,38 @@ public class MatricesBasic {
             System.out.println(""+A[j]);
         }
     }
+
+    /**
+     * Multiplication of vectors
+     * @param a
+     * @param b
+     * @return
+     */
+    static public double vectorM(double[] a, double[] b) {
+        if (a.length != b.length) {
+            throw new IllegalArgumentException();
+        }
+        double c = 0;
+        for (int i = 0; i < a.length; i++) {
+            c += a[i] * b[i];
+        }
+
+        return c;
+    }
+
+    /**
+     * Multiplication of matrix with vector
+     * @param a
+     * @param b
+     * @return
+     */
+    static public double[] matrixVectorM(double[][] a, double[] b) {
+        double[] r = new double[a.length];
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                r[i] += a[i][j] * b[j];
+            }
+        }
+        return r;
+    }
 }
