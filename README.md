@@ -25,5 +25,12 @@ Matrices
 
   -Normalization of vectors based on teh infinity norm
 
+Function approximations
+  -Newton polynomial
+  
+  -Splines (2nd-3rd degree)
+  
+  -Least squares
+
 
 Refer to the examples package for use cases.
