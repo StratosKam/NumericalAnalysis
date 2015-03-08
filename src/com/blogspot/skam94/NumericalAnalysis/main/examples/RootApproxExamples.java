@@ -21,10 +21,10 @@ package com.blogspot.skam94.NumericalAnalysis.main.examples;
 import com.blogspot.skam94.NumericalAnalysis.main.algorithms.RootApproximations;
 import com.blogspot.skam94.NumericalAnalysis.main.datatypes.Root;
 
-public class Examples {
+public class RootApproxExamples {
     private RootApproximations approximations;
 
-    public Examples(RootApproximations rootApproximations){
+    public RootApproxExamples(RootApproximations rootApproximations){
         this.approximations=rootApproximations;
     }
     public void Bisection1(){
@@ -91,15 +91,15 @@ public class Examples {
     }
 
     public static void main(String[] args){
-        Examples examples1=new Examples(new RootApproximations(new Function1()));
-        examples1.Bisection1();
-        examples1.NewtonRaphson1();
-        examples1.Secant1();
-        Examples examples2=new Examples(new RootApproximations(new Function2()));
-        examples2.CompareBisectionNewton2(50);
-        examples2.CompareBisectionNewton2(500);
-        examples2.CompareBisectionNewton2(5000);
-        examples2.CompareBisectionNewton2(50000);
+        RootApproxExamples rootApproxExamples1 =new RootApproxExamples(new RootApproximations(new Function1()));
+        rootApproxExamples1.Bisection1();
+        rootApproxExamples1.NewtonRaphson1();
+        rootApproxExamples1.Secant1();
+        RootApproxExamples rootApproxExamples2 =new RootApproxExamples(new RootApproximations(new Function2()));
+        rootApproxExamples2.CompareBisectionNewton2(50);
+        rootApproxExamples2.CompareBisectionNewton2(500);
+        rootApproxExamples2.CompareBisectionNewton2(5000);
+        rootApproxExamples2.CompareBisectionNewton2(50000);
 
     }
 
