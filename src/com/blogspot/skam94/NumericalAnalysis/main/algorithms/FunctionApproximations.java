@@ -18,7 +18,7 @@
  */
 package com.blogspot.skam94.NumericalAnalysis.main.algorithms;
 
-public class PolynomialApproximations {
+public class FunctionApproximations {
 
     /**
      * Newton method
