@@ -32,6 +32,12 @@ Function approximations
   -Splines (2nd-3rd degree)
   
   -Least squares
+  
+  Definite integral approximations
+  
+  -Trapezoidal rule
+  
+  -Simpson rule
 
 
 Refer to the examples package for use cases.
